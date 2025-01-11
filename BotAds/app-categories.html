@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>BotAds</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" itemprop="description" content="описание страницы">
+    <meta name="keywords" itemprop="keywords" content="ключевые слова">
+
+
+    <!-- Open Graph  -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="BotAds">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_EN">
+    <!-- Open Graph  -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="BotAds">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:site" content="">
+    <meta property="twitter:url" content="">
+    <!-- Twitter -->
+
+    <!-- plugnis -->
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <!-- plugnis -->
+
+
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__container">
+        <div class="header__top">
+            <button type="button" class="header__users btn btn-primary btn-sm">
+                <span class="btn__text">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-language"></use>
+                    </svg>
+                    Все пользователи
+                </span>
+                <svg class="btn__icon-down">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+            </button>
+            <button type="button" class="header__add btn btn-secondary btn-icon">
+                
+                
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+                
+            </button>
+        </div>
+        <div class="header__sort">
+            <button type="button" class="header__sort-btn btn btn-secondary btn-sm">
+                
+                
+                Цена
+                <svg class="btn__icon-down">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+                
+            </button>
+            <button type="button" class="header__sort-btn btn btn-secondary btn-sm">
+                
+                
+                Дата
+                <svg class="btn__icon-down">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+                
+            </button>
+            <button type="button" class="header__sort-btn btn btn-secondary btn-sm">
+                
+                
+                Количество пользователей
+                <svg class="btn__icon-down">
+                    <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                </svg>
+                
+            </button>
+        </div>
+        <div class="header__bottom">
+            <button type="button" class="header__filter btn btn-white btn-icon btn-xs">
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-filter"></use>
+                </svg>
+            </button>
+            <form action="#" class="header__categories">
+                <button type="button" class="header__categories-btn btn btn-white btn-xs">
+                    Категории
+                    <svg class="header__categories-down active">
+                        <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                    </svg>
+                    <span class="header__categories-quantity">0</span>
+                </button>
+                <div class="header__categories-body  active">
+                    <div class="header__categories-list">
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="downloads" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Скачивания</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="dating" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Знакомства</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="ai" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Нейросети</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="voices" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Войсы</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="movies" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Фильмы</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="music" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Музыка</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="books" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Книги</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="games" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Игры</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="finance" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Финансы</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="business" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Бизнес</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="crypto" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Криптовалюта</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="polls" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Опросы</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="food-drinks" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Еда и напитки</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="horoscopes" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Гороскопы</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="fonts" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Шрифты</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="entertainment" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Развлечения</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="medicine" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Медицина</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="education" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Образование</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="apps" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Приложения</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="apk-files" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">APK и файлы</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="sports" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Спорт</span>
+                        </label>
+                        <label class="header__categories-item input-label">
+                            <input type="checkbox" name="category" value="administration" class="input-label__control hidden" hidden>
+                            <span class="input-label__field">Администрирование</span>
+                        </label>
+                    </div>
+                    <button type="reset" class="header__categories-reset">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-clear"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+                <button type="button" class="header__categories-close btn btn-icon btn-white btn-xs">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                
+            </form>
+
+            <form action="#" class="header__search hidden">
+                <button class="header__search-back btn btn-white btn-icon btn-xs">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+                <div class="header__search-input"></div>
+                <button type="button" class="header__search-btn btn btn-white btn-icon btn-xs">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+            <main class="page">
+                <div class="cards">
+                    <div class="cards__container">
+                        <div class="card">
+    <div class="card__header">
+        <a href="https://t.me/instagram_downloader_bot" class="card__thumb">
+            <img src="img/apps/instagrаm-downloader.png" alt="Иконка приложения">
+        </a>
+        <div class="card__app">
+            <div class="card__app-name callout fw-medium">Instagram Downloader Bot</div>
+            <a href="https://t.me/instagram_downloader_bot" class="card__app-link link">@instagram_downloader_bot</a>
+        </div>
+    </div>
+    <div class="card__body">
+        <div class="card__row">
+            <div class="card__active subtitle">
+                <span class="color-secondary">Актив:</span>
+                <span class="fw-medium">3.2M</span>
+            </div>
+            <button type="button" class="card__time subtitle fw-medium">
+                <span class="card__time-value">15 окт</span>
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="card__row">
+            <div class="card__countries">
+                <ul class="card__countries-list">
+                     <li class="card__countries-item caption-lg"><img src="img/flags/russian.svg" alt="Флаг">1.5M</li> <li class="card__countries-item caption-lg"><img src="img/flags/english.svg" alt="Флаг">870k</li> <li class="card__countries-item caption-lg"><img src="img/flags/french.svg" alt="Флаг">560k</li>
+                </ul>
+                <div class="card__countries-side">
+                    <button class="card__countries-more footnote">
+                        Ещё 5
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__actions">
+                <div class="card__price title-sm fw-semibold">
+                    21 000 ₽
+                </div>
+                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><div class="card">
+    <div class="card__header">
+        <a href="https://t.me/TopSaverBot" class="card__thumb">
+            <img src="img/apps/top-saver.png" alt="Иконка приложения">
+        </a>
+        <div class="card__app">
+            <div class="card__app-name callout fw-medium">Top Saver Bot</div>
+            <a href="https://t.me/TopSaverBot" class="card__app-link link">@TopSaverBot</a>
+        </div>
+    </div>
+    <div class="card__body">
+        <div class="card__row">
+            <div class="card__active subtitle">
+                <span class="color-secondary">Актив:</span>
+                <span class="fw-medium">8.4M</span>
+            </div>
+            <button type="button" class="card__time subtitle fw-medium">
+                <span class="card__time-value">25 сен</span>
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="card__row">
+            <div class="card__countries">
+                <ul class="card__countries-list">
+                     <li class="card__countries-item caption-lg"><img src="img/flags/russian.svg" alt="Флаг">2.3M</li> <li class="card__countries-item caption-lg"><img src="img/flags/english.svg" alt="Флаг">1.5M</li> <li class="card__countries-item caption-lg"><img src="img/flags/german.svg" alt="Флаг">1.1M</li>
+                </ul>
+                <div class="card__countries-side">
+                    <button class="card__countries-more footnote">
+                        Ещё 5
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__actions">
+                <div class="card__price title-sm fw-semibold">
+                    38 600 ₽
+                </div>
+                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><div class="card">
+    <div class="card__header">
+        <a href="https://t.me/catizenbot" class="card__thumb">
+            <img src="img/apps/catizen.png" alt="Иконка приложения">
+        </a>
+        <div class="card__app">
+            <div class="card__app-name callout fw-medium">Catizen</div>
+            <a href="https://t.me/catizenbot" class="card__app-link link">@catizenbot</a>
+        </div>
+    </div>
+    <div class="card__body">
+        <div class="card__row">
+            <div class="card__active subtitle">
+                <span class="color-secondary">Актив:</span>
+                <span class="fw-medium">10.5M</span>
+            </div>
+            <button type="button" class="card__time subtitle fw-medium">
+                <span class="card__time-value">8 окт</span>
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="card__row">
+            <div class="card__countries">
+                <ul class="card__countries-list">
+                     <li class="card__countries-item caption-lg"><img src="img/flags/arabic.svg" alt="Флаг">5.8M</li> <li class="card__countries-item caption-lg"><img src="img/flags/english.svg" alt="Флаг">4.1M</li> <li class="card__countries-item caption-lg"><img src="img/flags/ukrainian.svg" alt="Флаг">1.6M</li>
+                </ul>
+                <div class="card__countries-side">
+                    <button class="card__countries-more footnote">
+                        Ещё 5
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__actions">
+                <div class="card__price title-sm fw-semibold">
+                    50 500 ₽
+                </div>
+                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><div class="card">
+    <div class="card__header">
+        <a href="https://t.me/spinthe_bot" class="card__thumb">
+            <img src="img/apps/spin-bottle.png" alt="Иконка приложения">
+        </a>
+        <div class="card__app">
+            <div class="card__app-name callout fw-medium">Spin the Bottle</div>
+            <a href="https://t.me/spinthe_bot" class="card__app-link link">@spinthe_bot</a>
+        </div>
+    </div>
+    <div class="card__body">
+        <div class="card__row">
+            <div class="card__active subtitle">
+                <span class="color-secondary">Актив:</span>
+                <span class="fw-medium">3.2M</span>
+            </div>
+            <button type="button" class="card__time subtitle fw-medium">
+                <span class="card__time-value">29 сен</span>
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="card__row">
+            <div class="card__countries">
+                <ul class="card__countries-list">
+                     <li class="card__countries-item caption-lg"><img src="img/flags/russian.svg" alt="Флаг">1.8M</li> <li class="card__countries-item caption-lg"><img src="img/flags/persian.svg" alt="Флаг">950k</li> <li class="card__countries-item caption-lg"><img src="img/flags/italian.svg" alt="Флаг">372k</li>
+                </ul>
+                <div class="card__countries-side">
+                    <button class="card__countries-more footnote">
+                        Ещё 5
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__actions">
+                <div class="card__price title-sm fw-semibold">
+                    8 300 ₽
+                </div>
+                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div><div class="card">
+    <div class="card__header">
+        <a href="https://t.me/vkmusic_bot" class="card__thumb">
+            <img src="img/apps/vk-music.png" alt="Иконка приложения">
+        </a>
+        <div class="card__app">
+            <div class="card__app-name callout fw-medium">VK Music Bot</div>
+            <a href="https://t.me/vkmusic_bot" class="card__app-link link">@vkmusic_bot</a>
+        </div>
+    </div>
+    <div class="card__body">
+        <div class="card__row">
+            <div class="card__active subtitle">
+                <span class="color-secondary">Актив:</span>
+                <span class="fw-medium">4.6M</span>
+            </div>
+            <button type="button" class="card__time subtitle fw-medium">
+                <span class="card__time-value">30 сен</span>
+                <svg>
+                    <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="card__row">
+            <div class="card__countries">
+                <ul class="card__countries-list">
+                     <li class="card__countries-item caption-lg"><img src="img/flags/russian.svg" alt="Флаг">2.3M</li> <li class="card__countries-item caption-lg"><img src="img/flags/english.svg" alt="Флаг">1.9M</li> <li class="card__countries-item caption-lg"><img src="img/flags/ukrainian.svg" alt="Флаг">1.0M</li>
+                </ul>
+                <div class="card__countries-side">
+                    <button class="card__countries-more footnote">
+                        Ещё 5
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__actions">
+                <div class="card__price title-sm fw-semibold">
+                    22 400 ₽
+                </div>
+                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </main>
+            
+            <!-- plugnis -->
+<script src="js/libs/fancybox.umd.js"></script>
+<!-- plugnis -->
+
+<script src="js/app.min.js"></script>
+        </div>
+    </body>
+</html>

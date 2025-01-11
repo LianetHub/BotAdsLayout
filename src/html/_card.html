@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card__header">
+        <a href="https://t.me/@@link" class="card__thumb">
+            <img src="@@image" alt="Иконка приложения">
+        </a>
+        <div class="card__app">
+            <div class="card__app-name callout fw-medium">@@name</div>
+            <a href="https://t.me/@@link" class="card__app-link link">@@@link</a>
+        </div>
+    </div>
+    <div class="card__body">
+        <div class="card__row">
+            <div class="card__active subtitle">
+                <span class="color-secondary">Актив:</span>
+                <span class="fw-medium">@@active</span>
+            </div>
+            <button type="button" class="card__time subtitle fw-medium">
+                <span class="card__time-value">@@date</span>
+                <svg>
+                    <use xlink:href="@img/sprite.svg#icon-chevron-right"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="card__row">
+            <div class="card__countries">
+                <ul class="card__countries-list">
+                    @@for (var i = 0; i < countries.length; i++) { <li class="card__countries-item caption-lg"><img src="`+countries[i].flag+`" alt="Флаг">`+countries[i].users+`</li>}
+                </ul>
+                <div class="card__countries-side">
+                    <button class="card__countries-more footnote">
+                        Ещё @@moreCountries
+                        <svg>
+                            <use xlink:href="@img/sprite.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__actions">
+                <div class="card__price title-sm fw-semibold">
+                    @@price
+                </div>
+                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm">
+                    <svg>
+                        <use xlink:href="@img/sprite.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

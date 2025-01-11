@@ -1,0 +1,140 @@
+.header {
+	padding: 1.5rem 0 1.25rem;
+	background: #fff;
+	position: relative;
+	// .header__container
+	&__container {
+		padding: 0 1.5rem;
+	}
+	// .header__top
+	&__top {
+		display: flex;
+		gap: 0.75rem;
+	}
+	// .header__users
+	&__users {
+		flex: 1 1 auto;
+	}
+	// .header__add
+	&__add {
+	}
+	// .header__sort
+	&__sort {
+		margin-top: 0.75rem;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0.75rem;
+		display: none;
+		&.active {
+			display: grid;
+		}
+	}
+	// .header__sort-btn
+	&__sort-btn {
+		font-weight: 400;
+		color: rgba(8, 8, 26, 0.36);
+		&:last-child {
+			grid-column: span 2;
+		}
+		&.selected {
+			color: $text;
+			justify-content: space-between;
+			padding-inline: 1rem;
+			& svg {
+				width: 1rem;
+				height: 1rem;
+			}
+		}
+	}
+	// .header__bottom
+	&__bottom {
+		margin-top: 1.25rem;
+		padding: 0 0.25rem;
+		display: flex;
+		align-items: center;
+	}
+	// .header__filter
+	&__filter {
+	}
+	// .header__categories
+	&__categories {
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// .header__categories-btn
+	&__categories-btn {
+		width: 100%;
+		gap: 0.75rem;
+	}
+	// .header__categories-down
+	&__categories-down {
+		transition: transform 0.3s ease;
+		&.active {
+			transform: rotate(180deg);
+		}
+	}
+	// .header__categories-quantity
+	&__categories-quantity {
+		border-radius: 50%;
+		background: $accent;
+		color: #fff;
+		width: 1.375rem;
+		height: 1.375rem;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.8125rem;
+		line-height: 138.462%;
+		display: none;
+	}
+	// .header__categories-body
+	&__categories-body {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 100%);
+		background: #fff;
+		z-index: 2;
+		padding: 1.5rem;
+		overflow-y: auto;
+		&.active {
+			display: block;
+		}
+	}
+	// .header__categories-close
+	&__categories-close {
+		transition: color 0.3s ease;
+		&:hover,
+		&:active {
+			color: $red-700;
+		}
+	}
+	// .header__categories-list
+	&__categories-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
+	// .header__categories-item
+	&__categories-item {
+	}
+	// .header__categories-reset
+	&__categories-reset {
+		display: none;
+	}
+	// .header__search
+	&__search {
+	}
+	// .header__search-back
+	&__search-back {
+		display: none;
+	}
+	// .header__search-input
+	&__search-input {
+	}
+	// .header__search-btn
+	&__search-btn {
+	}
+}

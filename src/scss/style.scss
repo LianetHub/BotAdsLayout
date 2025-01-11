@@ -1,0 +1,349 @@
+// Использование модулей SASS
+@use "sass:math";
+// Использование модулей SASS
+// ======================================МИКСИНЫ==============================================
+@import "mixins";
+// ======================================МИКСИНЫ==============================================
+
+// ======================================ШРИФТЫ===============================================
+
+// &display=swap&subset=cyrillic-ext
+@import "fonts";
+
+// ======================================ШРИФТЫ===============================================
+// ======================================ИКОНОЧНЫЙ ШРИФТ======================================
+
+// ======================================ИКОНОЧНЫЙ ШРИФТ======================================
+
+// Шрифт по умолчанию
+$fontfamily: "SFProText";
+
+// Шрифт по умолчанию
+
+$md1: 1439.98px;
+$md2: 1199.98px;
+$md3: 991.98px;
+$md4: 743.98px;
+$md5: 575.98px;
+$md6: 389.98px;
+
+// ПЕРЕМЕННЫЕ
+$minWidth: 320; // Минимальная ширина страницы
+$maxWidth: 1920; // Ширина макета
+$maxWidthContainer: rem(720); // Максимальная ширина ограничивающего контейнера
+$containerPadding: 30;
+
+$text: var(--text-primary);
+$secondary: var(--text-secondary);
+$tertiary: var(--text-tertiary);
+$accent: var(--text-accent);
+
+/* Red Shades */
+$red-300: var(--red-300);
+$red-350: var(--red-350);
+$red-400: var(--red-400);
+$red-450: var(--red-450);
+$red-500: var(--red-500);
+$red-550: var(--red-550);
+$red-600: var(--red-600);
+$red-650: var(--red-650);
+$red-700: var(--red-700);
+$red-750: var(--red-750);
+$red-800: var(--red-800);
+$red-850: var(--red-850);
+$red-900: var(--red-900);
+
+/* Blue Shades */
+$blue-300: var(--blue-300);
+$blue-350: var(--blue-350);
+$blue-400: var(--blue-400);
+$blue-450: var(--blue-450);
+$blue-500: var(--blue-500);
+$blue-550: var(--blue-550);
+$blue-600: var(--blue-600);
+$blue-650: var(--blue-650);
+$blue-700: var(--blue-700);
+$blue-750: var(--blue-750);
+$blue-800: var(--blue-800);
+$blue-850: var(--blue-850);
+$blue-900: var(--blue-900);
+
+/* Green Shades */
+$green-200: var(--green-200);
+$green-300: var(--green-300);
+$green-400: var(--green-400);
+$green-500: var(--green-500);
+$green-600: var(--green-600);
+$green-700: var(--green-700);
+$green-800: var(--green-800);
+$green-900: var(--green-900);
+
+/* Yellow Shades */
+$yellow-300: var(--yellow-300);
+$yellow-400: var(--yellow-400);
+$yellow-500: var(--yellow-500);
+$yellow-600: var(--yellow-600);
+$yellow-700: var(--yellow-700);
+$yellow-800: var(--yellow-800);
+$yellow-900: var(--yellow-900);
+
+/* Purple Shade */
+$purple-900: var(--purple-900);
+
+/* Teal Shade */
+$teal-400: var(--teal-400);
+
+// Z-Index
+$ui-index-1: 1; // Для наполняющих элементов в общем потоке
+$ui-index-2: 2; // Для наполняющих элементов в общем потоке
+$ui-index-3: 3; // Для масок
+$ui-index-4: 4; // Для сайдбаров
+$ui-index-5: 5; // Для модалок
+$ui-index-6: 6; // Для элементов, перекрывающих все
+
+//ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ
+
+:root {
+	--text-primary: #08081a;
+	--text-secondary: rgba(8, 8, 26, 0.6);
+	--text-tertiary: rgba(8, 8, 26, 0.36);
+	--text-accent: #0d81ff;
+
+	/* Red Shades */
+	--red-300: #ed72aa;
+	--red-350: #db4446;
+	--red-400: #ed2939;
+	--red-450: #ce2b37;
+	--red-500: #ce2939;
+	--red-550: #d80027;
+	--red-600: #d40026;
+	--red-650: #da0000;
+	--red-700: #c00;
+	--red-750: #c60b1e;
+	--red-800: #ba0c2f;
+	--red-850: #ad1519;
+	--red-900: #a2001d;
+
+	/* Blue Shades */
+	--blue-300: #0093dd;
+	--blue-350: #338af3;
+	--blue-400: #005bbf;
+	--blue-450: #005bbb;
+	--blue-500: #0052b4;
+	--blue-550: #0052b4;
+	--blue-600: #21468b;
+	--blue-650: #11457e;
+	--blue-700: #0039a6;
+	--blue-750: #002395;
+	--blue-800: #171796;
+	--blue-850: #002776;
+	--blue-900: #006;
+
+	/* Green Shades */
+	--green-200: #6da544;
+	--green-300: #058e6e;
+	--green-400: #239f40;
+	--green-500: #009b3a;
+	--green-600: #009246;
+	--green-700: #007c30;
+	--green-800: #477050;
+	--green-900: #005430;
+
+	/* Yellow Shades */
+	--yellow-300: #ffd691;
+	--yellow-400: #ffec2d;
+	--yellow-500: #fedf00;
+	--yellow-600: #ffd500;
+	--yellow-700: #ffce00;
+	--yellow-800: #ffc400;
+	--yellow-900: #c8b100;
+
+	/* Purple Shade */
+	--purple-900: #4a1f63;
+
+	/* Teal Shade */
+	--teal-400: #00abc2;
+}
+svg {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+body {
+	font-family: $fontfamily, sans-serif;
+	font-size: 1rem;
+	min-width: 320px;
+	min-height: 100%;
+	line-height: normal;
+	max-width: 375px;
+	margin: 0 auto;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.06) 20%, rgba(255, 255, 255, 0.08) 40%, rgba(255, 255, 255, 0.12) 90%),
+		linear-gradient(0deg, var(--bg-secondary, rgba(8, 8, 26, 0.04)) 0%, var(--bg-secondary, rgba(8, 8, 26, 0.04)) 100%), #fff;
+	&.lock {
+		overflow: hidden;
+		@media (min-width: $md2) {
+			overflow: visible;
+		}
+	}
+}
+// ==================ОБОЛОЧКА==============================
+.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	font-size: 1.0625rem;
+	line-height: 129.412%;
+	@media (min-width: $md4) {
+		overflow-x: clip;
+	}
+}
+
+//================== ОБОЛОЧКА==================================
+
+//=============== ОСНОВНАЯ СЕТКА===============================
+
+// Отзывчивая
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0 1rem;
+	max-width: $maxWidthContainer;
+}
+
+//=============== ОСНОВНАЯ СЕТКА===============================
+
+//=================Подключаем файлы стилей
+//================Общий файл для элементов страницы
+// @import "grid";
+@import "ui";
+@import "forms";
+//================Общий файл для элементов страницы
+@import "header";
+@import "footer";
+//=======================================
+
+// =======================ОСНОВНОЙ БЛОК==================
+.page {
+	flex: 1 1 auto;
+}
+
+// ========================================================
+
+.cards {
+	padding: 0.5rem 0;
+	// .cards__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+}
+
+.card {
+	background: #fff;
+	padding: 1rem;
+	border-radius: 0.75rem;
+	// .card__header
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 0.62rem;
+	}
+	// .card__thumb
+	&__thumb {
+		flex-shrink: 0;
+		& img {
+			width: 3.25rem;
+			height: 3.25rem;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+	// .card__app
+	&__app {
+	}
+	// .card__app-name
+	&__app-name {
+	}
+	// .card__app-link
+	&__app-link {
+	}
+	// .card__body
+	&__body {
+		margin-top: 1.25rem;
+	}
+	// .card__row
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+	// .card__active
+	&__active {
+	}
+	// .card__time
+	&__time {
+		display: flex;
+		align-items: center;
+		& svg {
+			margin: -0.25rem;
+			padding-bottom: 0.125rem;
+		}
+	}
+	// .card__time-value
+	&__time-value {
+	}
+	// .card__countries
+	&__countries {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	// .card__countries-list
+	&__countries-list {
+	}
+	// .card__countries-item
+	&__countries-item {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		& img {
+			flex-shrink: 0;
+			width: 1rem;
+			height: 1rem;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+		&:not(:last-child) {
+			margin-bottom: 0.25rem;
+		}
+	}
+	// .card__countries-side
+	&__countries-side {
+	}
+	// .card__countries-more
+	&__countries-more {
+		display: flex;
+		align-items: center;
+	}
+	// .card__actions
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		align-self: flex-end;
+	}
+	// .card__price
+	&__price {
+	}
+	// .card__btn
+	&__btn {
+		flex-shrink: 0;
+	}
+}

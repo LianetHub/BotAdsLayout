@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Instagram Downloader Bot",
+        "link": "instagram_downloader_bot",
+        "image": "@img/apps/instagrаm-downloader.png",
+        "active": "3.2M",
+        "date": "15 окт",
+        "countries": [
+            {
+                "flag": "@img/flags/russian.svg",
+                "users": "1.5M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "870k"
+            },
+            {
+                "flag": "@img/flags/french.svg",
+                "users": "560k"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "21 000 ₽"
+    },
+    {
+        "name": "Top Saver Bot",
+        "link": "TopSaverBot",
+        "image": "@img/apps/top-saver.png",
+        "active": "8.4M",
+        "date": "25 сен",
+        "countries": [
+            {
+                "flag": "@img/flags/russian.svg",
+                "users": "2.3M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "1.5M"
+            },
+            {
+                "flag": "@img/flags/german.svg",
+                "users": "1.1M"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "38 600 ₽"
+    },
+    {
+        "name": "Catizen",
+        "link": "catizenbot",
+        "image": "@img/apps/catizen.png",
+        "active": "10.5M",
+        "date": "8 окт",
+        "countries": [
+            {
+                "flag": "@img/flags/arabic.svg",
+                "users": "5.8M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "4.1M"
+            },
+            {
+                "flag": "@img/flags/ukrainian.svg",
+                "users": "1.6M"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "50 500 ₽"
+    },
+    {
+        "name": "Spin the Bottle",
+        "link": "spinthe_bot",
+        "image": "@img/apps/spin-bottle.png",
+        "active": "3.2M",
+        "date": "29 сен",
+        "countries": [
+            {
+                "flag": "@img/flags/russian.svg",
+                "users": "1.8M"
+            },
+            {
+                "flag": "@img/flags/persian.svg",
+                "users": "950k"
+            },
+            {
+                "flag": "@img/flags/italian.svg",
+                "users": "372k"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "8 300 ₽"
+    },
+    {
+        "name": "VK Music Bot",
+        "link": "vkmusic_bot",
+        "image": "@img/apps/vk-music.png",
+        "active": "4.6M",
+        "date": "30 сен",
+        "countries": [
+            {
+                "flag": "@img/flags/russian.svg",
+                "users": "2.3M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "1.9M"
+            },
+            {
+                "flag": "@img/flags/ukrainian.svg",
+                "users": "1.0M"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "22 400 ₽"
+    }
+]
