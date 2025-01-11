@@ -181,9 +181,6 @@ body {
 		linear-gradient(0deg, var(--bg-secondary, rgba(8, 8, 26, 0.04)) 0%, var(--bg-secondary, rgba(8, 8, 26, 0.04)) 100%), #fff;
 	&.lock {
 		overflow: hidden;
-		@media (min-width: $md2) {
-			overflow: visible;
-		}
 	}
 }
 // ==================ОБОЛОЧКА==============================

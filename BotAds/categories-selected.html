@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="css/style.min.css?_v=20250111195107">
 </head>
 
-<body>
+<body class="lock">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -72,12 +72,9 @@
 						</svg>
 					</button>
 					<form action="#" class="header__categories">
-						<button type="button" class="header__categories-btn btn btn-white btn-xs"> Категории <svg class="header__categories-down">
-								<use xlink:href="img/sprite.svg#icon-chevron-down"></use>
-							</svg>
-							<span class="header__categories-quantity">0</span>
+						<button type="button" class="header__categories-btn btn btn-white btn-xs"> Категории <span class="header__categories-quantity active">2</span>
 						</button>
-						<div class="header__categories-body ">
+						<div class="header__categories-body  active">
 							<div class="header__categories-list">
 								<label class="header__categories-item input-label">
 									<input type="checkbox" name="category" value="downloads" class="input-label__control hidden" hidden="">
@@ -88,7 +85,7 @@
 									<span class="input-label__field">Знакомства</span>
 								</label>
 								<label class="header__categories-item input-label">
-									<input type="checkbox" name="category" value="ai" class="input-label__control hidden" hidden="">
+									<input type="checkbox" name="category" value="ai" checked="" class="input-label__control hidden" hidden="">
 									<span class="input-label__field">Нейросети</span>
 								</label>
 								<label class="header__categories-item input-label">
@@ -96,7 +93,7 @@
 									<span class="input-label__field">Войсы</span>
 								</label>
 								<label class="header__categories-item input-label">
-									<input type="checkbox" name="category" value="movies" class="input-label__control hidden" hidden="">
+									<input type="checkbox" name="category" value="movies" checked="" class="input-label__control hidden" hidden="">
 									<span class="input-label__field">Фильмы</span>
 								</label>
 								<label class="header__categories-item input-label">
@@ -168,9 +165,19 @@
 									<span class="input-label__field">Администрирование</span>
 								</label>
 							</div>
+							<button type="reset" class="header__categories-reset btn btn-primary btn-icon btn-rounded btn-sm">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-clear"></use>
+								</svg>
+							</button>
 						</div>
+						<button type="button" class="header__categories-close btn btn-icon btn-white btn-xs">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-cross"></use>
+							</svg>
+						</button>
 					</form>
-					<form action="#" class="header__search">
+					<form action="#" class="header__search hidden">
 						<button class="header__search-back btn btn-white btn-icon btn-xs">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-arrow-left"></use>

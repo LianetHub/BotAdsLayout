@@ -78,10 +78,12 @@
             <form action="#" class="header__categories">
                 <button type="button" class="header__categories-btn btn btn-white btn-xs">
                     Категории
+                    @@if(categoriesChecked==0){
                     <svg class="header__categories-down@@if(categories===true){ active}">
                         <use xlink:href="@img/sprite.svg#icon-chevron-down"></use>
                     </svg>
-                    <span class="header__categories-quantity">0</span>
+                    }
+                    <span class="header__categories-quantity@@if(categoriesChecked>0){ active}">@@categoriesChecked</span>
                 </button>
                 <div class="header__categories-body @@if(categories===true){ active}">
                     <div class="header__categories-list">
@@ -94,7 +96,7 @@
                             <span class="input-label__field">Знакомства</span>
                         </label>
                         <label class="header__categories-item input-label">
-                            <input type="checkbox" name="category" value="ai" class="input-label__control hidden" hidden>
+                            <input type="checkbox" name="category" value="ai" @@if(categoriesChecked>0){checked} class="input-label__control hidden" hidden>
                             <span class="input-label__field">Нейросети</span>
                         </label>
                         <label class="header__categories-item input-label">
@@ -102,7 +104,7 @@
                             <span class="input-label__field">Войсы</span>
                         </label>
                         <label class="header__categories-item input-label">
-                            <input type="checkbox" name="category" value="movies" class="input-label__control hidden" hidden>
+                            <input type="checkbox" name="category" value="movies" @@if(categoriesChecked>0){checked} class="input-label__control hidden" hidden>
                             <span class="input-label__field">Фильмы</span>
                         </label>
                         <label class="header__categories-item input-label">
@@ -174,11 +176,13 @@
                             <span class="input-label__field">Администрирование</span>
                         </label>
                     </div>
-                    <button type="reset" class="header__categories-reset">
+                    @@if(categoriesChecked>0){
+                    <button type="reset" class="header__categories-reset btn btn-primary btn-icon btn-rounded btn-sm">
                         <svg>
                             <use xlink:href="@img/sprite.svg#icon-clear"></use>
                         </svg>
                     </button>
+                    }
                 </div>
                 @@if(categories===true){
                 <button type="button" class="header__categories-close btn btn-icon btn-white btn-xs">

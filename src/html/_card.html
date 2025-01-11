@@ -39,11 +39,20 @@
                 <div class="card__price title-sm fw-semibold">
                     @@price
                 </div>
+                @@if(checked===false){
                 <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm">
                     <svg>
                         <use xlink:href="@img/sprite.svg#icon-plus"></use>
                     </svg>
                 </button>
+                }
+                @@if(checked===true){
+                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline btn-sm active">
+                    <svg>
+                        <use xlink:href="@img/sprite.svg#icon-minus"></use>
+                    </svg>
+                </button>
+                }
             </div>
         </div>
     </div>

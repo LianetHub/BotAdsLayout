@@ -8,14 +8,24 @@
             @@include('html/_header.html', {
             "visibleSort":false,
             "selectedSort": false,
-            "categories": true,
+            "categories": false,
             "categoriesChecked": 0,
             })
             <main class="page">
                 <div class="cards">
                     <div class="cards__container">
-                        @@loop('./html/_card.html', './html/json/cards.json')
+                        @@loop('./html/_card.html', './html/json/cards-with-selected.json')
                     </div>
+                </div>
+                <div class="bag ">
+                    <div class="bag__total subtitle fw-semibold">
+                        21 000 ₽
+                    </div>
+                    <a href="" class="bag__link btn btn-primary btn-icon btn-rounded btn-xs">
+                        <svg>
+                            <use xlink:href="@img/sprite.svg#icon-bag"></use>
+                        </svg>
+                    </a>
                 </div>
             </main>
             @@include('html/_footer.html', {})

@@ -1,134 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <title>BotAds</title>
-    <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" itemprop="description" content="описание страницы">
-    <meta name="keywords" itemprop="keywords" content="ключевые слова">
-
-
-    <!-- Open Graph  -->
-    <meta property="og:type" content="business.business">
-    <meta property="og:title" content="BotAds">
-    <meta property="og:description" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:locale" content="en_EN">
-    <!-- Open Graph  -->
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="BotAds">
-    <meta property="twitter:description" content="">
-    <meta property="twitter:site" content="">
-    <meta property="twitter:url" content="">
-    <!-- Twitter -->
-
-    <!-- plugnis -->
-    <link rel="stylesheet" href="css/libs/fancybox.css">
-    <!-- plugnis -->
-
-
-    <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-
+<head>
+	<title>BotAds</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" itemprop="description" content="описание страницы">
+	<meta name="keywords" itemprop="keywords" content="ключевые слова">
+	<!-- Open Graph  -->
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="BotAds">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="en_EN">
+	<!-- Open Graph  -->
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:title" content="BotAds">
+	<meta property="twitter:description" content="">
+	<meta property="twitter:site" content="">
+	<meta property="twitter:url" content="">
+	<!-- Twitter -->
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20250111195107">
+	<!-- plugnis -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250111195107">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250111195107">
 </head>
-    <body>
-        <div class="wrapper">
-            <div style="padding: 1rem;
+
+<body>
+	<div class="wrapper">
+		<div style="padding: 1rem;
              display: flex;
               flex-direction: column;
               align-items: flex-start;
               gap: 1rem;
               ">
-                <div class="title-xxl fw-bold">Text</div>
-                <div class="title-xxl">Title-xxl</div>
-                <div class="title-xl">Title-xl</div>
-                <div class="title-lg">Title-lg</div>
-                <div class="title-md">Title-md</div>
-                <div class="title-sm">Title-sm</div>
-                <div class="headline">headline</div>
-                <div class="callout">callout</div>
-                <div class="subtitle">subtitle</div>
-                <div class="footnote">footnote</div>
-                <div class="caption-lg">caption-lg</div>
-                <div class="caption">caption</div>
-                <div class="caption-sm">caption-sm</div>
+			<div class="title-xxl fw-bold">Text</div>
+			<div class="title-xxl">Title-xxl</div>
+			<div class="title-xl">Title-xl</div>
+			<div class="title-lg">Title-lg</div>
+			<div class="title-md">Title-md</div>
+			<div class="title-sm">Title-sm</div>
+			<div class="headline">headline</div>
+			<div class="callout">callout</div>
+			<div class="subtitle">subtitle</div>
+			<div class="footnote">footnote</div>
+			<div class="caption-lg">caption-lg</div>
+			<div class="caption">caption</div>
+			<div class="caption-sm">caption-sm</div>
+			<div class="title-xxl fw-bold" style="margin-top: 2rem;">Font-weight</div>
+			<div class="title-lg fw-bold">Bold 700 fw-bold</div>
+			<div class="title-lg fw-semibold">Semibold 600 fw-semibold</div>
+			<div class="title-lg fw-medium">Medium 700 fw-medium</div>
+			<div class="title-lg fw-light">Light 300 fw-light</div>
+			<div class="title-xxl fw-bold" style="margin-top: 2rem;">Buttons</div>
+			<div>Button Primary</div>
+			<button type="button" class="btn btn-primary">Label</button>
+			<div>Button Primary sm</div>
+			<button type="button" class="btn btn-primary btn-sm">Label</button>
+			<div>Button Primary disabled</div>
+			<button type="button" disabled="" class="btn btn-primary btn-sm">Label</button>
+			<div>Button Primary loading</div>
+			<button type="button" class="btn btn-primary btn-sm loading"> Label </button>
+			<div>Button PrimaryOutline</div>
+			<button type="button" class="btn btn-primary-outline">Label</button>
+			<div>Button PrimaryOutline sm</div>
+			<button type="button" class="btn btn-primary-outline btn-sm">Label</button>
+			<div>Button PrimaryOutline disabled</div>
+			<button type="button" disabled="" class="btn btn-primary-outline btn-sm">Label</button>
+			<div>Button PrimaryOutline Loading</div>
+			<button type="button" class="btn btn-primary-outline btn-sm loading">Label</button>
+			<div>Button Icon PrimaryOutline</div>
+			<button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-plus"></use>
+				</svg>
+			</button>
+			<div>Button Icon PrimaryOutline Active</div>
+			<button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline active">
+				<svg>
+					<use xlink:href="img/sprite.svg#icon-minus"></use>
+				</svg>
+			</button>
+			<div>Button secondary</div>
+			<button type="button" class="btn btn-secondary">Label</button>
+			<div>Button secondary sm</div>
+			<button type="button" class="btn btn-secondary btn-sm">Label</button>
+			<div>Button secondary disabled</div>
+			<button type="button" disabled="" class="btn btn-secondary btn-sm">Label</button>
+			<div class="title-xxl fw-bold" style="margin-top: 2rem;">Link</div>
+			<div>Link default</div>
+			<a href="https://t.me/instagram_downloader_bot" class="link">@instagram_downloader_bot</a>
+			<div>Link active</div>
+			<a href="https://t.me/instagram_downloader_bot" class="link active">@instagram_downloader_bot</a>
+			<div class="title-xxl fw-bold" style="margin-top: 2rem;">Chips</div>
+			<div>Chips default</div>
+			<label class="header__categories-item input-label">
+				<input type="checkbox" name="category" value="downloads" class="input-label__control hidden" hidden="">
+				<span class="input-label__field">Скачивания</span>
+			</label>
+			<div>Chips checked</div>
+			<label class="header__categories-item input-label">
+				<input type="checkbox" name="category" checked="" value="downloads" class="input-label__control hidden" hidden="">
+				<span class="input-label__field">Скачивания</span>
+			</label>
+		</div>
+	</div>
+</body>
 
-
-                <div class="title-xxl fw-bold" style="margin-top: 2rem;">Font-weight</div>
-                <div class="title-lg fw-bold">Bold 700 fw-bold</div>
-                <div class="title-lg fw-semibold">Semibold 600 fw-semibold</div>
-                <div class="title-lg fw-medium">Medium 700 fw-medium</div>
-                <div class="title-lg fw-light">Light 300 fw-light</div>
-
-
-                <div class="title-xxl fw-bold" style="margin-top: 2rem;">Buttons</div>
-
-                <div>Button Primary</div>
-                <button type="button" class="btn btn-primary">Label</button>
-                <div>Button Primary sm</div>
-                <button type="button" class="btn btn-primary btn-sm">Label</button>
-                <div>Button Primary disabled</div>
-                <button type="button" disabled class="btn btn-primary btn-sm">Label</button>
-                <div>Button Primary loading</div>
-                <button type="button" class="btn btn-primary btn-sm loading">
-                    Label
-                </button>
-
-                <div>Button PrimaryOutline</div>
-                <button type="button" class="btn btn-primary-outline">Label</button>
-                <div>Button PrimaryOutline sm</div>
-                <button type="button" class="btn btn-primary-outline btn-sm">Label</button>
-                <div>Button PrimaryOutline disabled</div>
-                <button type="button" disabled class="btn btn-primary-outline btn-sm">Label</button>
-                <div>Button PrimaryOutline Loading</div>
-                <button type="button" class="btn btn-primary-outline btn-sm loading">Label</button>
-
-                <div>Button Icon PrimaryOutline</div>
-                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-plus"></use>
-                    </svg>
-                </button>
-                <div>Button Icon PrimaryOutline Active</div>
-                <button type="button" class="card__btn btn btn-icon btn-rounded btn-primary-outline active">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#icon-minus"></use>
-                    </svg>
-                </button>
-
-                <div>Button secondary</div>
-                <button type="button" class="btn btn-secondary">Label</button>
-                <div>Button secondary sm</div>
-                <button type="button" class="btn btn-secondary btn-sm">Label</button>
-                <div>Button secondary disabled</div>
-                <button type="button" disabled class="btn btn-secondary btn-sm">Label</button>
-
-
-                <div class="title-xxl fw-bold" style="margin-top: 2rem;">Link</div>
-                <div>Link default</div>
-                <a href="https://t.me/instagram_downloader_bot" class="link">@instagram_downloader_bot</a>
-                <div>Link active</div>
-                <a href="https://t.me/instagram_downloader_bot" class="link active">@instagram_downloader_bot</a>
-
-                <div class="title-xxl fw-bold" style="margin-top: 2rem;">Chips</div>
-                <div>Chips default</div>
-                <label class="header__categories-item input-label">
-                    <input type="checkbox" name="category" value="downloads" class="input-label__control hidden" hidden>
-                    <span class="input-label__field">Скачивания</span>
-                </label>
-                <div>Chips checked</div>
-                <label class="header__categories-item input-label">
-                    <input type="checkbox" name="category" checked value="downloads" class="input-label__control hidden" hidden>
-                    <span class="input-label__field">Скачивания</span>
-                </label>
-            </div>
-
-        </div>
-    </body>
 </html>
