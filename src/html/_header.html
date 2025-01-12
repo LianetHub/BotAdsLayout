@@ -70,12 +70,14 @@
             </button>
         </div>
         <div class="header__bottom">
-            <button type="button" class="header__filter btn btn-white btn-icon btn-xs">
-                <svg>
-                    <use xlink:href="@img/sprite.svg#icon-filter"></use>
-                </svg>
-            </button>
-            <form action="#" class="header__categories">
+            <div class="header__filter@@if(search===true){ hidden}">
+                <button type="button" class="header__filter btn btn-white btn-icon btn-xs">
+                    <svg>
+                        <use xlink:href="@img/sprite.svg#icon-filter"></use>
+                    </svg>
+                </button>
+            </div>
+            <form action="#" class="header__categories @@if(search===true){ hidden}">
                 <button type="button" class="header__categories-btn btn btn-white btn-xs">
                     Категории
                     @@if(categoriesChecked==0){
@@ -193,18 +195,24 @@
                 }
             </form>
 
-            <form action="#" class="header__search@@if(categories===true){ hidden}">
+            <form action="#" class="header__search@@if(categories===true){ hidden}@@if(search===true){ active}">
                 <button class="header__search-back btn btn-white btn-icon btn-xs">
                     <svg>
                         <use xlink:href="@img/sprite.svg#icon-arrow-left"></use>
                     </svg>
                 </button>
-                <div class="header__search-input"></div>
+                <input type="text" name="search" class="form__control" placeholder="Поиск">
                 <button type="button" class="header__search-btn btn btn-white btn-icon btn-xs">
                     <svg>
                         <use xlink:href="@img/sprite.svg#icon-search"></use>
                     </svg>
                 </button>
+                <div class="header__search-body@@if(search===true){ active}">
+                    <div class="picture">
+                        <img src="@img/duck/lupe.gif" alt="Duck">
+                    </div>
+                    <span class="headline fw-semibold color-secondary">Нет результатов</span>
+                </div>
             </form>
         </div>
     </div>

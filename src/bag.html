@@ -8,6 +8,8 @@
             @@include('html/_header.html', {
             "visibleSort":false,
             "selectedSort": false,
+            "search": false,
+            "filter": false,
             "categories": false,
             "categoriesChecked": 0,
             })
@@ -17,7 +19,7 @@
                         @@loop('./html/_card.html', './html/json/cards-with-selected.json')
                     </div>
                 </div>
-                <div class="bag ">
+                <div class="bag">
                     <div class="bag__total subtitle fw-semibold">
                         21 000 ₽
                     </div>

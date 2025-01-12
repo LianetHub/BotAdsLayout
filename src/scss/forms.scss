@@ -1,25 +1,23 @@
 .form {
-	// .form__input
-	&__input {
+	// .form__control
+	&__control {
 		text-overflow: ellipsis;
 		transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
 		width: 100%;
-		border-radius: 0.125rem;
-		background: #524a5f;
-		color: #d2dbe2;
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		line-height: 166.667%;
-		padding: 0.5rem;
-		border: rem(2) solid #524a5f;
+		border-radius: 1.5rem;
+		background: rgba(8, 8, 26, 0.04);
+		border: rem(1) solid transparent;
+		padding: 0.7rem 1.25rem;
+		font-size: 0.9375rem;
+		line-height: 133.333%;
+		width: 100%;
 		&::placeholder {
 			opacity: 1;
-			color: #d2dbe2;
+			color: rgba(8, 8, 26, 0.36);
 		}
 		&:hover,
 		&:focus {
-			border-color: $text;
+			border-color: $accent;
 		}
 		&:focus {
 			&::placeholder {
@@ -96,18 +94,35 @@
 	}
 	// .input-label__field
 	&__field {
-		display: flex;
+		display: inline-flex;
 		min-height: 3rem;
-		padding: 0.75rem 1rem;
+		padding: 0.68rem 1rem;
 		justify-content: center;
+		gap: rem(10);
 		align-items: center;
 		border-radius: 2rem;
 		border: rem(0.5) solid rgba(8, 8, 26, 0.12);
 		cursor: pointer;
+		user-select: none;
 		transition: all 0.3s ease;
 		&:active {
 			transform: scale(0.975);
 		}
+	}
+	&__icon {
+		& img {
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		& svg {
+			color: $accent;
+		}
+		width: 1.5rem;
+		height: 1.5rem;
+		overflow: hidden;
+		border-radius: 50%;
 	}
 }
 
@@ -259,5 +274,42 @@
 	&[aria-disabled="true"] {
 		cursor: default;
 		pointer-events: none;
+	}
+}
+
+.switch {
+	flex-shrink: 0;
+	// .switch__input
+	&__input {
+		&:checked {
+			& + .switch__field {
+				background: $accent;
+				&::before {
+					transform: translateX(1.2rem);
+				}
+			}
+		}
+	}
+	// .switch__field
+	&__field {
+		position: relative;
+		width: rem(48);
+		height: rem(28);
+		border-radius: 1.5rem;
+		display: block;
+		transition: background-color 0.3s ease 0s;
+		background: rgba(8, 8, 26, 0.08);
+		cursor: pointer;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0.25rem;
+			left: 0.25rem;
+			width: 1.25rem;
+			height: 1.25rem;
+			background: #fff;
+			border-radius: 50%;
+			transition: transform 0.3s ease 0s;
+		}
 	}
 }

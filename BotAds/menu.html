@@ -25,10 +25,10 @@
 	<meta property="twitter:url" content="">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20250111195107">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20250112183307">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250111195107">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250111195107">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250112183307">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250112183307">
 </head>
 
 <body>
@@ -66,12 +66,14 @@
 					</button>
 				</div>
 				<div class="header__bottom">
-					<button type="button" class="header__filter btn btn-white btn-icon btn-xs">
-						<svg>
-							<use xlink:href="img/sprite.svg#icon-filter"></use>
-						</svg>
-					</button>
-					<form action="#" class="header__categories">
+					<div class="header__filter">
+						<button type="button" class="header__filter btn btn-white btn-icon btn-xs">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-filter"></use>
+							</svg>
+						</button>
+					</div>
+					<form action="#" class="header__categories ">
 						<button type="button" class="header__categories-btn btn btn-white btn-xs"> Категории <svg class="header__categories-down">
 								<use xlink:href="img/sprite.svg#icon-chevron-down"></use>
 							</svg>
@@ -176,12 +178,18 @@
 								<use xlink:href="img/sprite.svg#icon-arrow-left"></use>
 							</svg>
 						</button>
-						<div class="header__search-input"></div>
+						<input type="text" name="search" class="form__control" placeholder="Поиск">
 						<button type="button" class="header__search-btn btn btn-white btn-icon btn-xs">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
 						</button>
+						<div class="header__search-body">
+							<div class="picture">
+								<img src="img/duck/lupe.gif" alt="Duck">
+							</div>
+							<span class="headline fw-semibold color-secondary">Нет результатов</span>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -442,9 +450,9 @@
 				</div>
 			</div>
 		</main> <!-- plugnis -->
-		<script src="js/libs/fancybox.umd.js?_v=20250111195107"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250112183307"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20250111195107"></script>
+		<script src="js/app.min.js?_v=20250112183307"></script>
 	</div>
 </body>
 

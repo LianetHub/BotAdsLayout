@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="css/style.min.css?_v=20250112183307">
 </head>
 
-<body>
+<body class="lock">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -47,33 +47,33 @@
 					</button>
 					<button type="button" class="header__add btn btn-secondary btn-icon">
 						<svg>
-							<use xlink:href="img/sprite.svg#icon-minus"></use>
+							<use xlink:href="img/sprite.svg#icon-plus"></use>
 						</svg>
 					</button>
 				</div>
-				<div class="header__sort active">
-					<button type="button" class="header__sort-btn btn btn-secondary btn-sm selected"> до 100к ₽ <svg>
-							<use xlink:href="img/sprite.svg#icon-cross"></use>
+				<div class="header__sort">
+					<button type="button" class="header__sort-btn btn btn-secondary btn-sm"> Цена <svg class="btn__icon-down">
+							<use xlink:href="img/sprite.svg#icon-chevron-down"></use>
 						</svg>
 					</button>
-					<button type="button" class="header__sort-btn btn btn-secondary btn-sm selected"> 25 июля <svg>
-							<use xlink:href="img/sprite.svg#icon-cross"></use>
+					<button type="button" class="header__sort-btn btn btn-secondary btn-sm"> Дата <svg class="btn__icon-down">
+							<use xlink:href="img/sprite.svg#icon-chevron-down"></use>
 						</svg>
 					</button>
-					<button type="button" class="header__sort-btn btn btn-secondary btn-sm selected"> до 120 000 чел. <svg>
-							<use xlink:href="img/sprite.svg#icon-cross"></use>
+					<button type="button" class="header__sort-btn btn btn-secondary btn-sm"> Количество пользователей <svg class="btn__icon-down">
+							<use xlink:href="img/sprite.svg#icon-chevron-down"></use>
 						</svg>
 					</button>
 				</div>
 				<div class="header__bottom">
-					<div class="header__filter">
+					<div class="header__filter hidden">
 						<button type="button" class="header__filter btn btn-white btn-icon btn-xs">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-filter"></use>
 							</svg>
 						</button>
 					</div>
-					<form action="#" class="header__categories ">
+					<form action="#" class="header__categories  hidden">
 						<button type="button" class="header__categories-btn btn btn-white btn-xs"> Категории <svg class="header__categories-down">
 								<use xlink:href="img/sprite.svg#icon-chevron-down"></use>
 							</svg>
@@ -172,7 +172,7 @@
 							</div>
 						</div>
 					</form>
-					<form action="#" class="header__search">
+					<form action="#" class="header__search active">
 						<button class="header__search-back btn btn-white btn-icon btn-xs">
 							<svg>
 								<use xlink:href="img/sprite.svg#icon-arrow-left"></use>
@@ -184,7 +184,7 @@
 								<use xlink:href="img/sprite.svg#icon-search"></use>
 							</svg>
 						</button>
-						<div class="header__search-body">
+						<div class="header__search-body active">
 							<div class="picture">
 								<img src="img/duck/lupe.gif" alt="Duck">
 							</div>
