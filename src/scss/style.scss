@@ -169,6 +169,10 @@ svg {
 	height: 1.5rem;
 }
 
+// html {
+// 	font-size: vw(16);
+// }
+
 body {
 	font-family: $fontfamily, sans-serif;
 	font-size: 1rem;
@@ -190,12 +194,8 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	overflow-x: hidden;
 	font-size: 1.0625rem;
 	line-height: 129.412%;
-	@media (min-width: $md4) {
-		overflow-x: clip;
-	}
 }
 
 //================== ОБОЛОЧКА==================================
@@ -207,7 +207,7 @@ body {
 	margin: 0 auto;
 	max-width: 100%;
 	padding: 0 1rem;
-	max-width: $maxWidthContainer;
+	// max-width: $maxWidthContainer;
 }
 
 //=============== ОСНОВНАЯ СЕТКА===============================

@@ -2,6 +2,9 @@
 @import "modules/popup";
 //============ МОДУЛИ ====================
 
+.color-accent {
+	color: $accent;
+}
 .color-secondary {
 	color: $secondary;
 }
@@ -82,7 +85,7 @@
 	font-size: 0.9375rem;
 	line-height: 133.333%;
 	-webkit-line-clamp: 1;
-	transition: all 0.3s ease 0s;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
 	-webkit-box-orient: vertical;
 	width: fit-content;
 	background-size: rem(900) rem(600);
