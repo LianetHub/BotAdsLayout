@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Catizen",
+        "link": "catizenbot",
+        "image": "@img/apps/catizen.png",
+        "active": "10.5M",
+        "notify": false,
+        "countries": [
+            {
+                "flag": "@img/flags/arabic.svg",
+                "users": "5.8M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "4.1M"
+            },
+            {
+                "flag": "@img/flags/ukrainian.svg",
+                "users": "1.6M"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "7 500 ₽",
+        "checked": false,
+        "disabled": true
+    }
+]

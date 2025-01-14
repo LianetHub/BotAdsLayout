@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Instagram Downloader Bot",
+        "link": "instagram_downloader_bot",
+        "image": "@img/apps/instagrаm-downloader.png",
+        "active": "3.2M",
+        "notify": true,
+        "countries": [
+            {
+                "flag": "@img/flags/russian.svg",
+                "users": "1.5M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "870k"
+            },
+            {
+                "flag": "@img/flags/french.svg",
+                "users": "560k"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "10 500 ₽",
+        "checked": false,
+        "disabled": false
+    },
+    {
+        "name": "Top Saver Bot",
+        "link": "TopSaverBot",
+        "image": "@img/apps/top-saver.png",
+        "active": "8.4M",
+        "notify": false,
+        "countries": [
+            {
+                "flag": "@img/flags/russian.svg",
+                "users": "2.3M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "1.5M"
+            },
+            {
+                "flag": "@img/flags/german.svg",
+                "users": "1.1M"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "14 200 ₽",
+        "checked": false,
+        "disabled": false
+    },
+    {
+        "name": "Spin the Bottle",
+        "link": "spinthe_bot",
+        "image": "@img/apps/spin-bottle.png",
+        "active": "10.5M",
+        "notify": false,
+        "countries": [
+            {
+                "flag": "@img/flags/arabic.svg",
+                "users": "5.8M"
+            },
+            {
+                "flag": "@img/flags/english.svg",
+                "users": "4.1M"
+            },
+            {
+                "flag": "@img/flags/ukrainian.svg",
+                "users": "1.6M"
+            }
+        ],
+        "moreCountries": 5,
+        "price": "7 500 ₽",
+        "checked": false,
+        "disabled": false
+    }
+]

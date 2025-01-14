@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', {
+    'title': 'BotAds'
+    })
+    <body>
+        <div class="wrapper">
+            <div class="cart">
+                <div class="cart__header">
+                    <h2 class="cart__title title-sm fw-semibold">Корзина</h2>
+                    <div class="cart__price headline fw-semibold">0 ₽</div>
+                </div>
+                <div class="cart__body">
+                    <div class="empty">
+                        <div class="picture">
+                            <img src="@img/duck/empty.gif" alt="Duck">
+                        </div>
+                        <span class="headline fw-semibold color-secondary">В корзине пусто</span>
+                    </div>
+                </div>
+                <button class="complete-btn btn btn-primary btn-sm">Открыть каталог</button>
+            </div>
+        </div>
+    </body>
+</html>
