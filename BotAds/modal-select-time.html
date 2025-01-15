@@ -33,17 +33,26 @@
 
 <body>
 	<div class="wrapper">
-		<div class="modal">
-			<div class="modal__body">
-				<div class="empty">
-					<div class="picture">
-						<img src="img/duck/glasses.gif" alt="Duck">
-					</div>
-					<span class="headline fw-semibold color-secondary">Почти готово</span>
-					<span class="subtitle color-secondary">Перейдите в бота и добавьте рекламный пост</span>
-					<a href="" class="empty__link subtitle fw-semibold color-accent">Вернуться в каталог</a>
+		<div class="modal modal-sm">
+			<div class="time-select">
+				<div class="time-select__header">
+					<div class="time-select__current title-lg">12:20</div>
+					<div class="time-select__date color-secondary caption-lg">05 сентября</div>
 				</div>
-				<button class="complete-btn btn btn-primary btn-sm">Перейти в бота</button>
+				<div class="time-select__body title-xl">
+					<div class="time-select__column">
+						<div class="time-select__value">11</div>
+						<div class="time-select__value active">12</div>
+						<div class="time-select__value">13</div>
+					</div>
+					<span class="time-select__separator"></span>
+					<div class="time-select__column">
+						<div class="time-select__value">19</div>
+						<div class="time-select__value active">20</div>
+						<div class="time-select__value">21</div>
+					</div>
+				</div>
+				<button type="button" class="time-select__btn btn btn-sm btn-secondary">Готово</button>
 			</div>
 		</div>
 	</div>

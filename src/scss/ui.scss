@@ -111,16 +111,22 @@
 }
 
 .complete-btn {
-	position: fixed;
+	&.btn {
+		position: fixed;
+		&.btn-secondary {
+			color: $text;
+			background: #f3f3f4;
+			border-radius: rem(32);
+		}
+		&.btn-primary-outline {
+			background: #fff;
+		}
+	}
 	bottom: 1.5rem;
 	left: 1.5rem;
 	right: 1.5rem;
 	z-index: 6;
-	&.btn.btn-secondary {
-		color: $text;
-		background: #f3f3f4;
-		border-radius: rem(32);
-	}
+
 	&__price {
 		font-size: 0.9375rem;
 		opacity: 0.7;
@@ -129,6 +135,51 @@
 		transform: translateY(-50%);
 		right: 1.25rem;
 		font-weight: 500;
+	}
+}
+
+.tabs {
+	margin-top: rem(28);
+	display: flex;
+	border-radius: 0.75rem;
+	background: rgba(8, 8, 26, 0.12);
+	padding: 0.12rem;
+	width: 100%;
+	// .tabs__btn
+	&__btn {
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: center;
+		background: transparent;
+		padding: 0.63rem;
+		&.active {
+			border-radius: 0.625rem;
+			background: #fff;
+		}
+	}
+}
+
+.range {
+	margin-top: 1rem;
+	position: relative;
+	padding: 0.5rem 0;
+	width: 100%;
+	// .range__control
+	&__control {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		background: #fff;
+		box-shadow: 0 rem(1) rem(4) rgba(8, 8, 26, 0.12);
+	}
+	// .range__field
+	&__field {
+		height: 1rem;
+		border-radius: 1rem;
+		background: linear-gradient(180deg, #5daafc 0%, #439eff 100%);
 	}
 }
 

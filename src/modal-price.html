@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', {
+    'title': 'BotAds'
+    })
+    <body>
+        <div class="wrapper">
+            <div class="modal modal-sm">
+                <div class="modal__row">
+                    <div class="modal__title title-sm fw-semibold">Цена рассылки</div>
+                    <button type="button" class="modal__close">
+                        <svg>
+                            <use xlink:href="@img/sprite.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal__filter">
+                    <div class="tabs subtitle fw-medium">
+                        <button type="button" class="tabs__btn active">За всех</button>
+                        <button type="button" class="tabs__btn">За 100k</button>
+                    </div>
+                    <div class="modal__filter-inputs">
+                        <div class="modal__filter-field">
+                            <span class="color-secondary caption-lg">от</span>
+                            <input type="text" name="start-price" class="form__control" value="1 000 ₽">
+                        </div>
+                        <div class="modal__filter-field">
+                            <span class="color-secondary caption-lg">до</span>
+                            <input type="text" name="end-price" class="form__control" value="2 400 000 ₽">
+                        </div>
+                    </div>
+                    <div class="range">
+                        <div class="range__control" style="left: 0;"></div>
+                        <div class="range__field"></div>
+                        <div class="range__control" style="right: 0"></div>
+                    </div>
+                    <button type="button" class="modal__filter-btn btn btn-primary btn-sm">Показать</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

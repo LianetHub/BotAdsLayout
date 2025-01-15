@@ -25,62 +25,95 @@
 	<meta property="twitter:url" content="">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20250115002324">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20250115133036">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250115002324">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250115002324">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250115133036">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250115133036">
 </head>
 
 <body>
 	<div class="wrapper">
 		<div class="time-start">
 			<div class="time-start__header">
-				<h2 class="time-start__title title-sm fw-semibold">Время запуска</h2>
-				<button type="button" class="time-start__btn">
+				<h2 class="time-start__title title-sm fw-semibold">Выбрано 1</h2>
+				<button type="button" class="time-start__btn active">
 					<svg>
 						<use xlink:href="img/sprite.svg#icon-list-check"></use>
 					</svg>
 				</button>
+				<label class="time-start__checkbox checkbox">
+					<input type="checkbox" name="select-all" value="all" class="checkbox__input hidden" hidden="">
+					<span class="checkbox__field"></span>
+				</label>
 			</div>
 			<div class="time-start__body">
 				<ul class="time-start__list">
 					<li class="time-start__item">
 						<div class="time-start__column">
-							<div class="time-start__value title-lg">18:10</div>
-							<div class="time-start__date caption-lg">05 декабря</div>
+							<div class="time-start__value title-lg">10:30</div>
+							<div class="time-start__date caption-lg">02 сентября</div>
 						</div>
-						<div class="time-start__icon">
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-chevron-right"></use>
-							</svg>
-						</div>
+						<label class="time-start__checkbox checkbox">
+							<input type="checkbox" name="time" checked="" value="10:30" class="checkbox__input hidden" hidden="">
+							<span class="checkbox__field"></span>
+						</label>
 					</li>
 					<li class="time-start__item">
-						<div class="time-start__column">
-							<div class="time-start__value title-lg">09:00</div>
-							<div class="time-start__date caption-lg">14 декабря</div>
-						</div>
-						<div class="time-start__icon">
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-chevron-right"></use>
-							</svg>
-						</div>
-					</li>
-					<li class="time-start__item">
-						<div class="time-start__unavailable">
-							<div class="time-start__unavailable-title subtitle fw-semibold">Недоступно</div>
-							<button type="button" class="time-start__unavailable-remove subtitle">Удалить все</button>
-						</div>
-					</li>
-					<li class="time-start__item disabled">
 						<div class="time-start__column">
 							<div class="time-start__value title-lg">12:20</div>
-							<div class="time-start__date caption-lg">01 декабря</div>
+							<div class="time-start__date caption-lg">05 сентября</div>
 						</div>
+						<label class="time-start__checkbox checkbox">
+							<input type="checkbox" name="time" value="12:30" class="checkbox__input hidden" hidden="">
+							<span class="checkbox__field"></span>
+						</label>
+					</li>
+					<li class="time-start__item">
+						<div class="time-start__column">
+							<div class="time-start__value title-lg">05:16</div>
+							<div class="time-start__date caption-lg">14 октября</div>
+						</div>
+						<label class="time-start__checkbox checkbox">
+							<input type="checkbox" name="time" value="05:16" class="checkbox__input hidden" hidden="">
+							<span class="checkbox__field"></span>
+						</label>
+					</li>
+					<li class="time-start__item">
+						<div class="time-start__column">
+							<div class="time-start__value title-lg">16:50</div>
+							<div class="time-start__date caption-lg">20 октября</div>
+						</div>
+						<label class="time-start__checkbox checkbox">
+							<input type="checkbox" name="time" value="16:50" class="checkbox__input hidden" hidden="">
+							<span class="checkbox__field"></span>
+						</label>
+					</li>
+					<li class="time-start__item">
+						<div class="time-start__column">
+							<div class="time-start__value title-lg">08:20</div>
+							<div class="time-start__date caption-lg">21 октября</div>
+						</div>
+						<label class="time-start__checkbox checkbox">
+							<input type="checkbox" name="time" value="08:20" class="checkbox__input hidden" hidden="">
+							<span class="checkbox__field"></span>
+						</label>
 					</li>
 				</ul>
+				<button class="time-start__settings">
+					<span class="time-start__settings-icon">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-filter"></use>
+						</svg>
+					</span>
+					<span class="headline"> Настроить 1 </span>
+					<span class="time-start__settings-icon color-tertiary">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+						</svg>
+					</span>
+				</button>
 			</div>
-			<button class="complete-btn btn btn-primary btn-sm">Готово</button>
+			<button class="complete-btn btn btn-primary-outline btn-sm">Удалить</button>
 		</div>
 	</div>
 </body>

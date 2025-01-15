@@ -500,6 +500,67 @@ body {
 	&__info-list {
 		margin-top: rem(10);
 	}
+
+	// .cart__date
+	&__date {
+		margin-top: 0.63rem;
+		border-radius: 1rem;
+		background: #fff;
+		padding: 1.5rem;
+	}
+	// .cart__date-header
+	&__date-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// .cart__date-caption
+	&__date-caption {
+	}
+	// .cart__date-quantity
+	&__date-quantity {
+	}
+	// .cart__date-body
+	&__date-body {
+		margin-top: 1.5rem;
+	}
+	// .cart__date-block
+	&__date-block {
+		&:not(:last-child) {
+			margin-bottom: 1.25rem;
+		}
+	}
+	// .cart__date-month
+	&__date-month {
+		margin-bottom: 0.5rem;
+	}
+	// .cart__date-items
+	&__date-items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	// .cart__date-btn
+	&__date-btn {
+		margin-top: 2rem;
+		width: 100%;
+	}
+	// .cart__date-info
+	&__date-info {
+		margin-top: 1.5rem;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 0.62rem;
+	}
+	// .cart__date-info-item
+	&__date-info-item {
+		padding: 0.25rem 0.5rem;
+		border-radius: 1.5rem;
+		&.active {
+			background: rgba(8, 8, 26, 0.04);
+		}
+	}
 }
 
 .time-start {
@@ -514,16 +575,21 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 1rem;
 	}
 	// .time-start__title
 	&__title {
 	}
 	// .time-start__btn
 	&__btn {
+		margin-left: auto;
 		color: $secondary;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		&.active {
+			color: $accent;
+		}
 	}
 	// .time-start__body
 	&__body {
@@ -586,5 +652,58 @@ body {
 	}
 	// .time-start__unavailable-remove
 	&__unavailable-remove {
+	}
+	// .time-start__settings
+	&__settings {
+		position: fixed;
+		left: 1.5rem;
+		right: 1.5rem;
+		z-index: 6;
+		border-radius: 1rem;
+		border: rem(0.7) solid rgba(8, 8, 26, 0.08);
+		background: #fff;
+		padding: 1.25rem;
+		display: flex;
+		align-items: center;
+		gap: 0.625rem;
+		bottom: 5.5rem;
+		.headline {
+			flex: 1 1 auto;
+			text-align: left;
+			font-weight: 400;
+		}
+	}
+	// .time-start__settings-icon
+	&__settings-icon {
+	}
+}
+
+.filter {
+	background: #fff;
+	padding: 2.5rem 1.25rem 5rem;
+	min-height: 100vh;
+	// .filter__block
+	&__block {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+	// .filter__title
+	&__title {
+	}
+	// .filter__sort
+	&__sort {
+		margin-top: 1.25rem;
+		display: flex;
+		flex-direction: column;
+	}
+	// .filter__labels
+	&__labels {
+		margin-top: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		column-gap: 0.65rem;
+		margin-right: -1rem;
 	}
 }
