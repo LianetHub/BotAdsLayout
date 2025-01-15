@@ -1,9 +1,203 @@
-@font-face {
-  font-family: "SFProText";
-  font-display: swap;
-  src: url("../fonts/SFProText-Bold.woff") format("woff"), url("../fonts/SFProText-Bold.woff2") format("woff2");
-  font-weight: 700;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+address {
   font-style: normal;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+[role=button] {
+  cursor: pointer;
+  background-color: inherit;
+  font-size: inherit;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
 }
 
 @font-face {
@@ -25,8 +219,8 @@
 @font-face {
   font-family: "SFProText";
   font-display: swap;
-  src: url("../fonts/SFProText-Semibold.woff") format("woff"), url("../fonts/SFProText-Semibold.woff2") format("woff2");
-  font-weight: 600;
+  src: url("../fonts/SFProText-Bold.woff") format("woff"), url("../fonts/SFProText-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -35,6 +229,14 @@
   font-display: swap;
   src: url("../fonts/SFProText-Regular.woff") format("woff"), url("../fonts/SFProText-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  font-display: swap;
+  src: url("../fonts/SFProText-Semibold.woff") format("woff"), url("../fonts/SFProText-Semibold.woff2") format("woff2");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -118,7 +320,7 @@ html {
 body {
   font-family: "SFProText", sans-serif;
   font-size: 1rem;
-  min-width: 320px;
+  min-width: 20rem;
   min-height: 100%;
   line-height: normal;
   margin: 0 auto;
@@ -206,7 +408,7 @@ body.lock {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   background: #fff;
-  padding: 1.5rem 1.25rem;
+  padding: 1.5rem 1.25rem 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,8 +1295,8 @@ body.lock {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .input-label__field:active {
@@ -1454,8 +1656,8 @@ body.lock {
       flex-shrink: 0;
   border-radius: 50%;
   border: 0.5rem solid #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   background: rgba(8, 8, 26, 0.08);
 }
 
@@ -1607,7 +1809,7 @@ body.lock {
   height: calc(100vh - 100%);
   background: #fff;
   z-index: 2;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 6rem;
   overflow-y: auto;
 }
 
@@ -2258,7 +2460,7 @@ body.lock {
 
 .filter {
   background: #fff;
-  padding: 2.5rem 1.25rem 5rem;
+  padding: 2.5rem 1.25rem 6rem;
   min-height: 100vh;
 }
 

@@ -8,6 +8,7 @@
 // ======================================ШРИФТЫ===============================================
 
 // &display=swap&subset=cyrillic-ext
+@import "reset";
 @import "fonts";
 
 // ======================================ШРИФТЫ===============================================
@@ -176,7 +177,7 @@ html {
 body {
 	font-family: $fontfamily, sans-serif;
 	font-size: 1rem;
-	min-width: 320px;
+	min-width: rem(320);
 	min-height: 100%;
 	line-height: normal;
 	// max-width: 375px;
@@ -680,7 +681,7 @@ body {
 
 .filter {
 	background: #fff;
-	padding: 2.5rem 1.25rem 5rem;
+	padding: 2.5rem 1.25rem 6rem;
 	min-height: 100vh;
 	// .filter__block
 	&__block {
