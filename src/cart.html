@@ -61,7 +61,13 @@
                         </div>
                     </div>
                 </div>
-                <a href="" class="complete-btn btn btn-primary btn-sm">Создать пост</a>
+                @@include('./html/_complete-btn.html', {
+                "type": "link",
+                "className": "btn-primary",
+                "text": "Создать пост",
+                "hasPrice": false,
+                "price": ''
+                })
             </div>
         </div>
     </body>

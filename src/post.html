@@ -91,7 +91,13 @@
                         <button type="button" class="cart__date-btn btn btn-primary-outline btn-sm">Добавить</button>
                     </div>
                 </div>
-                <button type="button" class="complete-btn btn btn-primary btn-sm">Пропустить</button>
+                @@include('./html/_complete-btn.html', {
+                "type": "btn",
+                "className": "btn-primary",
+                "text": "Пропустить",
+                "hasPrice": false,
+                "price": ''
+                })
             </div>
         </div>
     </body>

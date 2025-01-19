@@ -7,6 +7,7 @@
         <div class="wrapper">
             <div class="modal">
                 <div class="modal__header">
+                    <div class="resize-indicator"></div>
                     <div class="modal__row">
                         <div class="modal__title title-sm fw-semibold">5 дней</div>
                         <div class="modal__types">
@@ -114,7 +115,13 @@
                             </div>
                         </div>
                     </div>
-                    <button class="complete-btn btn btn-primary btn-sm">Далее <span class="complete-btn__price">27 500 ₽</span></button>
+                    @@include('./html/_complete-btn.html', {
+                    "type": "btn",
+                    "className": "btn-primary",
+                    "text": "Далее",
+                    "hasPrice": true,
+                    "price": '27 500 ₽'
+                    })
                 </div>
             </div>
         </div>

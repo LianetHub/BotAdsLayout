@@ -87,7 +87,13 @@
                         </span>
                     </button>
                 </div>
-                <button class="complete-btn btn btn-primary-outline btn-sm">Удалить</button>
+                @@include('./html/_complete-btn.html', {
+                "type": "btn",
+                "className": "btn-primary-outline",
+                "text": "Удалить",
+                "hasPrice": false,
+                "price": ''
+                })
             </div>
         </div>
     </body>

@@ -15,7 +15,14 @@
                         <span class="subtitle color-secondary">Перейдите в бота и добавьте рекламный пост</span>
                         <a href="" class="empty__link subtitle fw-semibold color-accent">Вернуться в каталог</a>
                     </div>
-                    <button class="complete-btn btn btn-primary btn-sm">Перейти в бота</button>
+
+                    @@include('./html/_complete-btn.html', {
+                    "type": "link",
+                    "className": "btn-primary",
+                    "text": "Перейти в бота",
+                    "hasPrice": false,
+                    "price": ''
+                    })
                 </div>
             </div>
         </div>

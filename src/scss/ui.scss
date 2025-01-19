@@ -111,8 +111,9 @@
 }
 
 .complete-btn {
+	position: relative;
+	z-index: 6;
 	&.btn {
-		position: fixed;
 		&.btn-secondary {
 			color: $text;
 			background: #f3f3f4;
@@ -122,11 +123,23 @@
 			background: #fff;
 		}
 	}
-	bottom: 1.5rem;
-	left: 1.5rem;
-	right: 1.5rem;
-	z-index: 6;
+	// bottom: 1.5rem;
+	// left: 1.5rem;
+	// right: 1.5rem;
+	&__wrapper {
+		position: fixed;
+		z-index: 6;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 0.63rem 1.5rem 1.5rem;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.9) 50%);
 
+		display: flex;
+		.btn {
+			width: 100%;
+		}
+	}
 	&__price {
 		font-size: 0.9375rem;
 		opacity: 0.7;
@@ -154,6 +167,7 @@
 		padding: 0.63rem;
 		&.active {
 			border-radius: 0.625rem;
+			font-weight: 500;
 			background: #fff;
 		}
 	}
@@ -226,12 +240,31 @@
 	}
 	// .bag__link
 	&__link {
+		padding-top: rem(6);
+		display: block;
+		& svg {
+			width: 2rem;
+			height: 2rem;
+		}
 	}
 }
 
 .picture {
 	max-width: 7.5rem;
 }
+
+.resize-indicator {
+	position: absolute;
+	top: 0;
+	width: 2.25rem;
+	height: 0.3125rem;
+	background: rgba(8, 8, 26, 0.12);
+	top: 0.38rem;
+	border-radius: 0.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 // ._loading {
 // 	color: transparent;
 // 	&::after {

@@ -13,7 +13,13 @@
                         </div>
                         <span class="headline fw-semibold color-secondary">Здесь пока пусто</span>
                     </div>
-                    <button class="complete-btn btn btn-primary btn-sm">Открыть каталог</button>
+                    @@include('./html/_complete-btn.html', {
+                    "type": "btn",
+                    "className": "btn-primary",
+                    "text": "Открыть каталог",
+                    "hasPrice": false,
+                    "price": ''
+                    })
                 </div>
             </div>
         </div>

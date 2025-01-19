@@ -7,6 +7,7 @@
         <div class="wrapper">
             <div class="modal">
                 <div class="modal__header">
+                    <div class="resize-indicator"></div>
                     <div class="modal__row">
                         <div class="modal__title title-sm fw-semibold">13 дней</div>
                         <div class="modal__types">
@@ -114,7 +115,13 @@
                             </div>
                         </div>
                     </div>
-                    <button class="complete-btn btn btn-primary btn-sm">Применить</button>
+                    @@include('./html/_complete-btn.html', {
+                    "type": "btn",
+                    "className": "btn-primary",
+                    "text": "Применить",
+                    "hasPrice": false,
+                    "price": ''
+                    })
                 </div>
             </div>
         </div>

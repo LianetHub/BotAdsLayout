@@ -52,7 +52,13 @@
                         </li>
                     </ul>
                 </div>
-                <button class="complete-btn btn btn-primary btn-sm">Готово</button>
+                @@include('./html/_complete-btn.html', {
+                "type": "btn",
+                "className": "btn-primary",
+                "text": "Готово",
+                "hasPrice": false,
+                "price": ''
+                })
             </div>
         </div>
     </body>
