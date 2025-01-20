@@ -203,14 +203,6 @@ input[type=number] {
 @font-face {
   font-family: "SFProText";
   font-display: swap;
-  src: url("../fonts/SFProText-Bold.woff") format("woff"), url("../fonts/SFProText-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SFProText";
-  font-display: swap;
   src: url("../fonts/SFProText-Light.woff") format("woff"), url("../fonts/SFProText-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
@@ -219,8 +211,16 @@ input[type=number] {
 @font-face {
   font-family: "SFProText";
   font-display: swap;
-  src: url("../fonts/SFProText-Regular.woff") format("woff"), url("../fonts/SFProText-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/SFProText-Bold.woff") format("woff"), url("../fonts/SFProText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFProText";
+  font-display: swap;
+  src: url("../fonts/SFProText-Medium.woff") format("woff"), url("../fonts/SFProText-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -235,8 +235,8 @@ input[type=number] {
 @font-face {
   font-family: "SFProText";
   font-display: swap;
-  src: url("../fonts/SFProText-Medium.woff") format("woff"), url("../fonts/SFProText-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/SFProText-Regular.woff") format("woff"), url("../fonts/SFProText-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -580,6 +580,18 @@ body.open-modal::before {
   min-height: 3.75rem;
   border-radius: 2.5rem;
   background: rgba(8, 8, 26, 0.02);
+}
+
+.language__bottom-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .language__bottom-text {
@@ -1121,11 +1133,15 @@ body.open-modal::before {
 }
 
 .bag__link {
-  padding-top: 0.375rem;
   display: block;
 }
 
-.bag__link svg {
+.bag__link.btn.btn-icon.btn-xs {
+  width: 3rem;
+  height: 3rem;
+}
+
+.bag__link.btn.btn-icon.btn-xs svg {
   width: 2rem;
   height: 2rem;
 }
@@ -1964,7 +1980,7 @@ body.open-modal::before {
   height: calc(100vh - 100%);
   background: #fff;
   z-index: 2;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   overflow-y: auto;
 }
 
@@ -2170,6 +2186,11 @@ body.open-modal::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card__countries-more svg {
+  width: 1rem;
+  height: 1rem;
 }
 
 .card__actions {

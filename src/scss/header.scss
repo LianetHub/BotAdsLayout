@@ -181,7 +181,7 @@
 		height: calc(100vh - 100%);
 		background: #fff;
 		z-index: 2;
-		padding: 1.5rem;
+		padding: 0 1.5rem;
 		overflow-y: auto;
 		&.active {
 			display: flex;
